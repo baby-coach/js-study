@@ -12,7 +12,7 @@
     </script>
 ```
 注意，在这种方式下wangEditor会自动创建菜单和编辑区，并设置其css属性，那么表现的结果就是：编辑区高度固定为300px，无法拖拽放大，也无法自动扩展高度以适应编辑器内容。
-![高度固定](./height fix.gif)
+![高度固定](./height%20auto.gif)
 
 通过查看页面源码，我们发现编辑区的style属性如下：
 ```
@@ -73,6 +73,6 @@ function Editor(toolbarSelector, textSelector) {
     </script>
 ```
 注意，我们这里只是把编辑区的style属性的height值由默认值300px改成了auto，效果如下：
-![高度自适应](./height auto.gif)
+![高度自适应](./height%20auto.gif)
 
 当然实际场景中，为了显示美观我们需要给一个最小高度: min-height: 300px;
